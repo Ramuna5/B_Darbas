@@ -32,7 +32,7 @@ namespace B_Darbas.Drivers
 
             switch (browser)
             {
-                case Browsers.Chrome:
+                /*case Browsers.Chrome:
                     webDriver = new ChromeDriver();
                     break;
                 /*case Browsers.Firefox:

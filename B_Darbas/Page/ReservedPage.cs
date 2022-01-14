@@ -9,8 +9,9 @@ namespace B_Darbas.Page
 {
     class ReservedPage : BasePage
     {
-        private const string PageAddress = "https://www.reserved.com/lt/lt/";
+        private const string PageAddress = "https://www.reserved.com/lt/lt/customer/account/login/#login";
 
+        //private IWebElement _loginPath => Driver.FindElement(By.XPath("//*[@id=headerWrapper]/div/div[3]/div[2]"));
         private IWebElement _nameInputField => Driver.FindElement(By.Id("login[username]_id")); //id="login[username]_id"
         private IWebElement _passInputField => Driver.FindElement(By.Id("login[password]_id"));
 
@@ -19,14 +20,14 @@ namespace B_Darbas.Page
 
         public ReservedPage(IWebDriver webdriver) : base(webdriver) { }
 
-        public ReservedPage NavigateDefaultPage()
+        /*public ReservedPage NavigateDefaultPage()
         {
             if (Driver.Url != PageAddress)
             {
                 Driver.Url = PageAddress;
             }
             return this;
-        }
+        }*/
 
         public void FullNameField(string text)
         {
