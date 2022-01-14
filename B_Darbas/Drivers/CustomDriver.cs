@@ -16,10 +16,10 @@ namespace B_Darbas.Drivers
             return GetDriver(Browsers.Chrome);
         }
 
-        public static IWebDriver GetFirefoxDriver()
+        /*public static IWebDriver GetFirefoxDriver()
         {
             return GetDriver(Browsers.Firefox);
-        }
+        }*/
 
         public static IWebDriver GetIncognitoChrome()
         {
@@ -35,9 +35,9 @@ namespace B_Darbas.Drivers
                 case Browsers.Chrome:
                     webDriver = new ChromeDriver();
                     break;
-                case Browsers.Firefox:
+                /*case Browsers.Firefox:
                     webDriver = new FirefoxDriver();
-                    break;
+                    break*/
                 case Browsers.IncognitoChrome:
                     webDriver = GetChromeWithIncognitoOption();
                     break;
